@@ -1,13 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--primary-color);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+}
+
+:root {
+  --primary-color: #000200;
+  --secondary-color: #ffffff;
+  --primary-light: #0002009c;
+}
+
+.header-wrp {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+.header-logo {
+  line-height: 52px;
+}
+
+.header-logo img {
+  width: 100%;
+  max-width: 220px;
+}
+
+.side-nav-wrp > span {
+  color: var(--secondary-color);
+  font-size: 28px;
+  line-height: 52px;
+  cursor: pointer;
+}
+
+.off-can-nav-wrp {
+  position: absolute;
+  width: 100%;
+  max-width: 280px;
+  right: 0;
+  top: -15px;
+  padding: 36px;
+  height: 100vh;
+  background: url("./components/images/side-nav-bg.jpeg");
+  background-size: cover;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.off-can-nav-wrp.active {
+  transform: translateX(0%);
+}
+
+.off-can-menu span {
+  display: block;
+}
+
+.off-can-mid-align {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.off-can-menu {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menu-items span {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: var(--secondary-color);
+  padding-bottom: 1.2rem;
+}
+
+.close-menu {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.home-comtainer,
+.full-screen-video-wrp {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.full-screen-video-wrp video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.home-comtainer {
+  position: relative;
+}
+
+.home-ovrly {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: var(--primary-light);
+}
+
+.home-scrn-content-ottr {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.home-scrn-content-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.home-scrn-content {
+  max-width: 800px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  color: var(--secondary-color);
 }
