@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 class Sidenav extends Component {
   state = {
     isNavActive: false
@@ -28,8 +29,12 @@ class Sidenav extends Component {
           <div className="off-can-mid-align">
             <div className="off-can-menu">
               <div className="menu-items">
-                <span>Menu</span>
-                <span>Menu</span>
+                <span>
+                  <Link to="/">Home</Link>
+                </span>
+                <span>
+                  <Link to="/rockets">Rockets</Link>
+                </span>
                 <span>Menu</span>
                 <span>Menu</span>
                 <span>Menu</span>

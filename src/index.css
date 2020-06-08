@@ -110,6 +110,30 @@ p {
   padding-bottom: 1.2rem;
 }
 
+.menu-items a {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-items a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--secondary-color);
+  bottom: -1px;
+  left: 0;
+  transition: all 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.menu-items a:hover:after,
+.menu-items a:focus:after {
+  width: 100%;
+}
+
 .close-menu {
   font-size: 1.2rem;
   line-height: 1.7rem;

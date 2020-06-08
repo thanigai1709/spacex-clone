@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Logo from "./images/spacex-logo-black-and-white.png";
 import Sidenav from "./Sidenav";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -9,9 +10,9 @@ function Header() {
         <div className="row">
           <div className="col-sm-6">
             <div className="header-logo">
-              <a href="#">
+              <Link to="/">
                 <img src={Logo} alt="logo" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-sm-6 text-right">
