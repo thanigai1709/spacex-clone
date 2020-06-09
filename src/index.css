@@ -183,3 +183,30 @@ p {
   margin: auto;
   color: var(--secondary-color);
 }
+
+.rockets-pg-hero {
+  background: url("./components/images/rockets-hero-image.jpg");
+  background-size: cover;
+}
+
+.rockets-hero-ottr {
+  display: table;
+  width: 100%;
+  height: 100vh;
+}
+
+.rockets-hero-inner {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: var(--primary-light);
+}
+
+.rockets-hero-cnt {
+  color: var(--secondary-color);
+}
+
+.content-area {
+  position: relative;
+  min-height: 100vh;
+}
+
